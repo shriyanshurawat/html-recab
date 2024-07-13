@@ -4,14 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            
+        }
+        td , th{
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+
+        }
+        tr:nth-child(even){
+            background-color: rgb(170, 14, 14);
+        }
+    </style>
 </head>
 <body>
 
-    <table>
+    <table >
+        <colgroup>
+            <col span="2" style="background-color: green;" />
+        </colgroup>
         <tr>
-            <th>Country</th>
+            <th colspan="2">Country</th>
             <th>Country code </th>
             <th>gmail</th>
+        </tr>
+        <tr>
+            <td>USA</td>
+            <td>USA </td>
+            <td>USA@google.com</td>
+        </tr>
+        <tr>
+            <td>Japan</td>
+            <td>JP </td>
+            <td>japan@google.com</td>
+        </tr>
+        <tr>
+            <td>China</td>
+            <td>CH</td>
+            <td>China@google.com</td>
+        </tr>
+        <tr>
+            <td>Bermuda</td>
+            <td>BR</td>
+            <td>Bermuda@google.com</td>
         </tr>
     </table>
     
